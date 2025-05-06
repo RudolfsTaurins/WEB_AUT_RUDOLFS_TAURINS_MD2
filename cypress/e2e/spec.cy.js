@@ -1,5 +1,4 @@
 const { AppointmentPage } = require("../../PageObjects/AppointmentPage");
-const { BasePage } = require("../../PageObjects/BasePage");
 const { HomePage } = require("../../PageObjects/HomePage");
 describe('HomeWork 2', () => {
   
