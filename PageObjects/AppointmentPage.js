@@ -12,59 +12,41 @@ export class AppointmentPage extends BasePage {
     static get boxField(){
         return cy.get("#chk_hospotal_readmission");
     }
-
     static get HealthField(){
         return cy.get("#radio_program_medicaid");
     }
-    static get calendarField(){
-        return cy.get("[class=\"input-group-addon\"]");
+    static get calendarField() {
+        return cy.get(".input-group-addon");
     }
-    static get selectDate(){
-        return cy.get("[class=\"day\"]");
+    static get selectDate() {
+        return cy.get(".day");
     }
-    
     static get backButtonFromCalendar(){
-
         return cy.get('#menu-toggle');
-
     }
     static get coment(){
         return cy.get("#txt_comment");
     }
-
     static get BookFieldButton(){
         return cy.get("#btn-book-appointment")
     }
 
     static get validateFacility(){
-
         return cy.get('#facility');
-
-
     }
-
     static get validateHospital(){
-
         return cy.get('#hospital_readmission');
-
-
     }
-
     static get validateHealthCareProgramm(){
-
         return cy.get('#program');
-
     }
     static get validateDate(){
 
         return cy.get('#visit_date');
-
     }
-
     static get validateComment(){
 
         return cy.get('#comment');
-
     }
 
 }

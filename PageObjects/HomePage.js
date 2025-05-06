@@ -27,10 +27,9 @@ export class HomePage extends BasePage {
     }
 
     static get historyButton(){
-        return cy.get("#sidebar-wrapper").contains("History");
+        return cy.contains("#sidebar-wrapper", "History");
     }
-
-    static get validateHistory(){
-        return cy.get("[class=\"col-sm-12 text-center\"]");
+    static get validateHistory() {
+        return cy.get("#content").find(".col-sm-12.text-center");
     }
 }
